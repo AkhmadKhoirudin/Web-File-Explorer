@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* CSS tambahan */
+        .container {
+            margin-top: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 600px; /* Sesuaikan tinggi iframe sesuai kebutuhan */
+            border: none;
+        }
+        /* CSS tambahan untuk jarak antar elemen */
+        .card {
+            margin-right: 5px; /* Jarak antar card secara horizontal */
+            margin-bottom: 5px; /* Jarak antar card secara vertikal */
+        }
+
+        .card-body {
+            padding: 5px; /* Padding dalam card */
+        }
+
+        .card-img-top {
+            max-height: 100px; /* Setinggi maksimal gambar ikon */
+            object-fit: contain;
+        }
+
+        /* CSS tambahan untuk teks */
+.card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-text a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+
+.card-text a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>File Manager</h1>
+        <!-- Navigasi untuk memilih folder -->
+        <div class="mb-3">
+            <a href="buka.php" target="fileFrame" class="btn btn-primary">Kembali ke Daftar</a>
+        </div>
+        <!-- Iframe untuk menampilkan konten dari buka.php -->
+        <iframe src="buka.php" name="fileFrame"></iframe>
+    </div>
+    
+</body>
+</html>
